@@ -25,8 +25,10 @@ function logNames(items) {
  */
 function getUppercaseNames(items) {
   // TODO: use `map`
-  return INVENTORY.map(name => {name.toUpperCase()});
-}
+  return INVENTORY.map(function (items) {
+    return { name: String(items.name).toUpperCase()};
+  });  
+  }
 
 /**
  * @param {Item[]} items - array of items
