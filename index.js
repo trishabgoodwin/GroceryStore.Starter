@@ -84,7 +84,9 @@ function countItems(items) {
  */
 function calculateTotalPrice(items) {
   // TODO: use `reduce`
-}
+  const totalCost = items.reduce((total,items) => total + items.quantity * items.price, 0);
+  return totalCost;
+} 
 
 // --------------------- DO NOT CHANGE THE CODE BELOW ------------------------ //
 
