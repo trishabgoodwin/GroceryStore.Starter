@@ -73,6 +73,9 @@ function getItemsByCategory(items, category) {
  */
 function countItems(items) {
   // TODO: use `reduce`
+  const totalItems = INVENTORY.reduce((total, items)=> total + items.quantity, 0);
+  return totalItems;
+
 }
 
 /**
