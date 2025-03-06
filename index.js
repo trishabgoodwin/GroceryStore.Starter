@@ -63,6 +63,8 @@ function getItemPriceByName(items, name) {
  */
 function getItemsByCategory(items, category) {
   // TODO: use `filter`
+  const itemCat = INVENTORY.filter(items => items.category === category);
+  return {ItemsAre:itemCat};
 }
 
 /**
